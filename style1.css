@@ -1,0 +1,255 @@
+body {
+    background-image:url(images1/heritageback2.webp) ;
+    background-size: cover;
+    height: auto;
+    position: relative;
+}
+
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*navigation bar*/
+
+#g1{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: #212121;
+    
+}
+#logo{
+    margin-left: 20px;
+}
+#mainnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    
+}
+#mainnav li{
+    float: left;
+}
+#mainnav li a{
+    list-style-type: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+#mainnav li a:hover:not(.active) {
+    color: #fff;
+}
+.active{
+    background-color: none;
+}
+
+
+/*img animation */
+h1 {
+    text-align: center;
+    padding-bottom: 65px;
+    color: #212329;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+  }
+
+  .gallery {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding: 150px;
+  }
+  
+  .gallery__photo {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+  
+    position: absolute;
+    transition: all 0.2s;
+    z-index: 10;
+    outline-offset: 20px;
+  }
+  
+  .gallery__photo--p1 {
+    top: 0;
+    left: 0;
+  }
+  
+  .gallery__photo--p2 {
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .gallery__photo--p3 {
+    top: 40px;
+    left: 20%;
+  }
+  
+  .gallery__photo--p4 {
+    top: 60px;
+    left: 40%;
+  }
+  
+  .gallery__photo--p5 {
+    top: 40px;
+    left: 60%;
+    z-index: 2;
+  }
+  
+  .gallery__photo:hover {
+    outline: 15px solid #212329;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05) translateY(-20px);
+    z-index: 20;
+  }
+  .gallery:hover .gallery__photo:not(:hover) {
+    transform: scale(0.9);
+  }
+
+
+
+  
+.footer-container {
+    background-color: #212329;
+    padding:4rem 0 2rem 0;
+}
+
+.footer {
+    width: 80%;
+    height:40vh ;
+    background-color: #212329;
+    color: #fff ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin: 0 auto;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h3 {
+    margin-bottom: 2rem;
+}
+
+.footer-heading a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover {
+    color: red;
+    transition: 0.3s ease-out;
+}
+
+.footer-email-form h3 {
+    margin-bottom: 2rem;
+}
+
+#footer-email {
+    width: 250px;
+    height: 40px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer-email::placeholder {
+    color: #b1b1b1;
+
+}
+
+#footer-email-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #f9423d;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#footer-email-btn:hover {
+    cursor: pointer;
+    background-color: #337af1;
+    transition: all 0.4s ease-out;
+}
+
+@media screen and (max-width:1150px) {
+    .footer {
+        height: 50vh;
+    }
+    .footer-email-form {
+        margin-top: 4rem;
+    }
+    
+}
+
+@media screen and (max-width:820px) {
+    .footer {
+        padding-top: 2rem;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .gallery{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .footer-3 {
+        display: none;
+    }
+    .footer-email-form {
+        margin-top: 2rem;
+    }
+}
+
+.column1{
+    float: left;
+    width: 50%;
+    padding: 12px;
+    min-height: 300px;
+    padding: 20px;
+}
+
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 760px){
+    .column1{
+        width: 100%;
+    }
+}
+.button {
+    background-color: #212329;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
