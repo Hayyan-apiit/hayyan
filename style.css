@@ -81,7 +81,7 @@ body {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        overflow: hidden;
+        overflow: hidden;0
         float: right;
         width: 200px;
     }
@@ -486,6 +486,10 @@ body{
   justify-content: space-between;
   margin: 20px 0 12px 0;
 }
+#don{
+    margin-left: 20%;
+    color: red;
+}
 form .user-details .input-box{
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
@@ -564,6 +568,14 @@ form .input-box span.details{
   /* transform: scale(0.99); */
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
   }
+  #detail, #amount{
+    height: 50px;
+    width: 150px;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+  }
  @media(max-width: 584px){
  .container{
   max-width: 100%;
@@ -606,7 +618,7 @@ form .user-details .input-box{
 
 .input-box
 {
-    justify-content: left;
+    justify-content: center;
     text-align: left;
     align-content: left;
     align-items: left;
