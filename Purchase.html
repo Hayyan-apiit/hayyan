@@ -26,7 +26,7 @@
         <div id="g1">
             <section id="gg">
                 <figure id="logo">
-                    <img src="images1/logo.webp" width="100px">
+                    <img src="images1/logo.webp" width="100px" alt="img">
                 </figure>
             </section>
             <section id="gg">
@@ -36,7 +36,7 @@
                     <li><a href="Beaches.html">Beaches</a></li> 
                     <li><a href="Activities.html">Activities</a></li>
                     <li><a href="Heritage.html">Heritage</a></li> 
-                    <li><a class="active"href="Purchase.html">Purchase and Donate</a></li>
+                    <li><a class="active" href="Purchase.html">Purchase and Donate</a></li>
                 </ul>
             </section>
         </div>
@@ -103,6 +103,7 @@
                     <a href="#">View more</a>
                 </div>
         </div>
+        </div>
     </section>
     <br>
 
@@ -121,7 +122,6 @@
                         <p>Limited acess</p>
                     </div>
                     <div class="price">
-                        <h3></h3>
                     </div>
                     <div class="btn">
                         <a href="#">Donate</a>
@@ -137,7 +137,6 @@
                         <p>Limited acess</p>
                     </div>
                     <div class="price">
-                        <h3></h3>
                     </div>
                     <div class="btn">
                         <a href="#">Donate</a>
@@ -151,7 +150,6 @@
                         <p>Limited acess</p>
                     </div>
                     <div class="price">
-                        <h3></h3>
                     </div>
                     <div class="btn">
                         <a href="#">Donate</a>
@@ -166,7 +164,6 @@
                         <p>Limited acess</p>
                     </div>
                     <div class="price">
-                        <h3></h3>
                     </div>
                     <div class="btn">
                         <a href="#">Donate</a>
@@ -177,7 +174,80 @@
         <br>
 
     </section>
+
     
+
+    <!--DONATION FORM-->
+    <section>
+        <div class="container">
+            <div class="title">Donation Form</div>
+            <div class="content">
+              <form id="donation" action="get">
+                <div class="user-details">
+                  <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" id="f_name" placeholder="Enter your name" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">adress</span>
+                    <input type="text" id="address" placeholder="Enter your Adress" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" id="email" placeholder="Enter your email" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" id="telphone" placeholder="Enter your number" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Card number</span>
+                    <input type="text" id="c_number" placeholder="Enter your card No." required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">CVC</span>
+                    <input type="text" id="cvc" placeholder="CVC" required>
+                  </div>
+                  <div>
+                    <span class="details" id="details">Types of donations</span> 
+                    <select id="detail">
+                      <option value="wild life conservation">wild life conservation</option>
+                      <option value="Beach clear up">Beach clear up</option>
+                      <option value="Medical Donations">Medical Donations</option>
+                      <option value="Charity Food">Charity Food</option>
+                      
+                    </select>   
+                    </div>
+                  
+                  <div>
+                  <span class="details" id="amounts">Donation amount</span> 
+                  <select id="amount">
+                    <option value="100">100</option>
+                    <option value="250">250</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="2500">2500</option>
+                    <option value="5000">5000</option>
+                    <option value="10000">10000</option>
+                  </select>   
+                  </div>
+                </div>
+                
+                <div class="button">
+                    <input id="button" type="button" value="Donate">
+                </div>
+                <p id="output"></p>
+              </form>
+            </div>
+          </div>
+        
+    </section>
+    <br>
+
+    
+
+
+
 
 
     <footer>
@@ -201,7 +271,7 @@
                     <h3>Social Media</h3>
                     <a href="#">Instagram</a>
                     <a href="#">Facebook</a>
-                    <a href="#"Youtube</a>
+                    <a href="#">Youtube</a>
                     <a href="#">Twitter</a>
                     <a href="#">Terms of Services</a>
                 </div>
@@ -212,6 +282,13 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
         <!--References
 Anon (n.d). Alamy. 
 Available at: https://www.alamy.com/medical-equipment-donation-during-coronavirus-covid-19-pandemic-volunteer-holding-a-donation-box-filled-with-medicines-surgical-gloves-and-face-mask-image356507146.html
@@ -240,7 +317,7 @@ Available at: https://www.vectorstock.com/royalty-free-vector/charity-donation-b
 
 -->
     </footer>
-
+    <script src="main1.js"></script>
 
     </body>
 </html>

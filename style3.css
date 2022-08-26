@@ -1,0 +1,353 @@
+
+  /*-------------------------------------ACTIVITY TICKET PURCHASE-------------------------------------------------*/
+  
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body{
+    background: #f3e2ad;
+    padding: 0 10px;
+  }
+  .wrap{
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    padding: 30px;
+  }
+  
+  .wrap .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fec107;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .wrap .form{
+    width: 100%;
+  }
+  
+  .wrap .form .inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrap .form .inputfield label{
+     width: 200px;
+     color: #757575;
+     margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .wrap .form .inputfield .input,
+  .wrap .form .inputfield .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .wrap .form .inputfield .textarea{
+    width: 100%;
+    height: 125px;
+    resize: none;
+  }
+  
+  .wrap .form .inputfield .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+  }
+  
+  .wrap .form .inputfield .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+  }
+  
+  .wrap .form .inputfield .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+  
+  
+  .wrap .form .inputfield .input:focus,
+  .wrap .form .inputfield .textarea:focus,
+  .wrap .form .inputfield .custom_select select:focus{
+    border: 1px solid #fec107;
+  }
+  
+  .wrap .form .inputfield p{
+     font-size: 14px;
+     color: #757575;
+  }
+  .wrap .form .inputfield .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .wrap .form .inputfield .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .wrap .form .inputfield .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fec107;
+    display: block;
+    position: relative;
+  }
+  .wrap .form .inputfield .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+  }
+  .wrap .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+    background: #fec107;
+  }
+  
+  .wrap .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+  }
+  
+  .wrap .form .inputfield .btn{
+    width: 100%;
+     padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #fec107;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .wrap .form .inputfield .btn:hover{
+    background: #ffd658;
+  }
+  
+  .wrap .form .inputfield:last-child{
+    margin-bottom: 0;
+  }
+  
+  @media (max-width:420px) {
+    .wrap .form .inputfield{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .wrap .form .inputfield label{
+      margin-bottom: 5px;
+    }
+    .wrap .form .inputfield.terms{
+      flex-direction: row;
+    }
+  }
+  
+  
+  
+  .row{
+    margin: 2%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column{
+    flex-basis: 32%;
+    border-radius: 20px;
+    padding: 50px 12px;
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: 0%;
+    transition: 0.5;
+    text-align: center;
+  
+  }
+
+
+
+/*------------------------------------------------------------NAVIGATION BAR--------------------------------*/
+
+  .heading{
+    margin-top: 25px;
+    text-align: left;
+}
+.hh1 {
+    text-align: center;
+    padding-bottom: 65px;
+    color: #212329;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 25px;
+}
+
+.column1{
+    float: left;
+    width: 50%;
+    padding: 12px;
+    min-height: 300px;
+    padding: 50px;
+}
+
+.column1 p{
+    padding: 5px;
+    text-align: justify;
+}
+
+#g1{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: #212329;
+    
+}
+#logo{
+    margin-left: 20px;
+}
+#mainnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    
+}
+#mainnav li{
+    float: left;
+}
+#mainnav li a{
+    list-style-type: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+#mainnav li a:hover:not(.active) {
+    color: red;
+}
+.active{
+    background-color: red;
+}
+/*
+.row1{
+    display: grid;
+    grid-template-rows: auto auto;
+}*/
+  
+  
+@media screen and (max-width: 768px) {
+    
+    .column1{
+        width: 100%;
+    }
+    #mainnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        float: right;
+        width: 200px;
+    }
+    #mainnav li{
+        float: center;
+        text-align: center;
+    }
+    #mainnav li a{
+        list-style-type: none;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    #mainnav li a:hover:not(.active) {
+        color: red;
+    }
+    .active{
+        background-color: red;
+    }
+}
+.row{
+    margin: 2%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    flex-basis: 32%;
+    border-radius: 20px;
+    padding: 50px 12px;
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: 0%;
+    transition: 0.5;
+    text-align: center;
+
+}
+
+
+
+
+/*........................................BUTTON BAR....................................*/
+
+.button2 {
+  background-color: #e24800fa;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 400px;
+  border-radius: 80px;
+  margin-left:20px;
+
+}
+/*
+@media screen and (max-width: 760px){
+  .button2{
+      width: 300px;
+      margin-left: 10%;
+  }
+  
+}*/
+

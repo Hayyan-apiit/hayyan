@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <header>
+        <div id="g1">
+            <section id="gg">
+                <figure id="logo">
+                    <img src="images1/logo.webp" width="100px">
+                </figure>
+            </section>
+            <section id="gg">
+                <ul id="mainnav">
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="Wildlife.html">wild life</a></li> 
+                    <li><a href="Beaches.html">Beaches</a></li> 
+                    <li><a href="Activities.html">Activities</a></li>
+                    <li><a href="Heritage.html">Heritage</a></li> 
+                    <li><a class="active" href="Purchase.html">Purchase and Donate</a></li>
+                </ul>
+            </section>
+        </div>
+        </header>
+
+        
+  <section>
+    <div class="row">
+        <section class="column">
+            <h2>
+                Day Pass
+            </h2>
+            <br>
+            <p>
+              LKR 1000 
+            </p>
+
+        </section>
+        <br>
+        <section class="column">
+            <h2>
+                Foreign Pass
+            </h2>
+            <br>
+            <p>  
+            </p>
+        </section>
+        <br>
+        <section class="column">
+            <h2>
+                Student Pass
+            </h2>
+            <br>
+            <p>
+            </p>
+        </section>
+    </div>
+</section>
+
+
+
+
+
+
+<form class="activitiesform">
+<section>
+<div class="wrap">
+    <div class="title">
+     Purchase ticket
+    </div>
+    <div class="form">
+        <div class="inputfield">
+            <label>Pass details</label>
+            <div class="custom_select">
+              <select name="region" id="region" required>
+                <option value="" selected disabled>Select your region</option>
+                <option value="foreign">Foreign</option>
+                <option value="local">Local</option>
+            </select>
+            </div>
+         </div>
+         
+         <div class="inputfield">
+            <label>Select your pass type</label>
+            <div class="custom_select">
+              <select name="pass-type" id="pass-type" required>
+                <option value="" selected disabled>Select your pass type</option>
+                <option value="adult">Adult</option>
+                <option value="child">Child</option>
+                <option value="annual">Annual</option>
+            </select>
+            </div>
+         </div>
+        <div class="inputfield">
+          <label for="num">Enter number of passes</label>
+                <input id='num' type="number" min="0" required>
+       </div>  
+        
+      
+      <div class="inputfield">
+        
+        <label> Duration</label>
+        <input required type="radio" name="duration-select" id="3h">
+        <label for="3h">3 H</label>
+        <input type="radio" name="duration-select" id="halfday">
+        <label for="halfday">Half Day</label>
+        <input type="radio" name="duration-select" id="fullday">
+        <label for="fullday">Full Day</label>
+        <input type="radio" name="duration-select" id="twodays">
+        <label for="twodays">2 Days</label>
+      </div> 
+
+      <div class="inputfield">
+      <label for="foodtoken">Food Token</label>
+                <input type="checkbox" id="foodtoken" value="foodtoken" >
+              </div> 
+
+              <div class="inputfield">
+          <label > current cost</label>    <p id="currenttotal" >   0   </p>
+              
+     
+          </div>
+       <div class="inputfield">
+        <button id="orderfavorite" class="btn" >Order Favorite</button >
+        <br><br>
+        <button id="addtofavorite" class="btn"  >Add to Favorite</button>
+    </div>
+      <div class="inputfield">
+        <button id="addtoorder" class="btn">Add to Order</button>
+      </div>
+      <div class="inputfield">
+        <button id="placeorder" class="btn">Place Order</button>
+      </div>
+      <div class="inputfield">
+        <button id="checkloyaltybtn" class="btn">check loyality</button>
+      </div>
+    </div><br><br>
+    <table border="2px">
+      <thead>
+          <tr>
+           <th>Region</th>
+           <th>Type</th>
+           <th>Number</th>
+           <th>Duration</th>
+           <th>Extras</th>
+           <th>Total</th>
+          </tr>
+      </thead>
+      <tbody id="ordertableoutput">
+          <tr>
+              <td>**</td>
+              <td>**</td>
+              <td>**</td>
+              <td>**</td>
+              <td>**</td>
+              <td>**</td>
+          </tr>
+      </tbody>
+  </table><br>
+  
+  <p id="totaloverall">Total:</p>
+</div>	
+
+</section>
+</form>	
+<!--
+<section>
+    <a href="activityBooking.html" target="_blank" class="button2">BOOK TICKETS</a>
+</section>
+<br>
+<br>-->
+<script src="main.js"></script>
+</body>
+</html>
